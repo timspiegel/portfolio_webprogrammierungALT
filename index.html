@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>🔎 Produktsuche</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles.css" /> 
+    <script src="script.js"></script>
+</head>
+
+<header>
+    <h1>Suche nach Produkten</h1>
+</header>
+
+<body>
+    <!-- ===================== -->
+    <!-- Inhalt der Startseite -->
+    <!-- ===================== -->
+    <main id="page-start">
+        <section id="search">
+            <label for="searchInput">Hier können verschiedene Produkte nach ihrem Produktnamen gesucht werden:</label>
+            <input type="text" id="searchInput" placeholder="Produktname eingeben" style="width: 550px;">
+            <br>
+            <button id="searchButton">Suchen</button>
+        </section>
+    </main>
+
+
+    <!-- ======================== -->
+    <!-- Inhalt der Übersichtsseite -->
+    <!-- ======================== -->
+    <main id="page-list" style="display: none;">
+        <!-- Hier wird der Container für die gefundenen Produkte angezeigt -->
+        <section id="productList">
+            <!-- Hier werden die Produkte eingefügt -->
+        </section>
+
+        <!-- Link zur Suchseite -->
+        <section id="backLink">
+            <a href="index.html" id="backToSearchLink">Zurück zur Suche</a>
+        </section>
+
+
+        <!-- Erneut versuchen-Link -->
+        <section id="tryAgain" style="display: none;">
+            <p>Leider kein Ergebnis gefunden! Versuche es bitte erneut.</p>
+            <a href="index.html">Erneut versuchen</a>
+        </section>
+
+        <section id="backLink" style="display: none;">
+            <a href="#" id="backToSearchLink">Zurück zur Suche</a>
+        </section>   
+    </main>
+
+
+    <!-- ======================== -->
+    <!-- Inhalt der No-Result Seite -->
+    <!-- ======================== -->
+    <main id="NoResult" style="display: none;">
+        <p>Leider kein Ergebnis gefunden! Versuche es bitte erneut.</p>
+        <a href="index.html">Erneut versuchen</a>
+    </main>
+
+
+    <!-- ========================== -->
+    <!-- Inhalt der Produktseite -->
+    <!-- ========================== -->
+    <main id="page-details" style="display: none;">
+        <section id="productDetails">
+            <h2 id="productTitle">Produkttitel</h2>
+            <p><strong>Preis:</strong> <span id="productPrice"></span>$</p>
+            <p><strong>Marke:</strong> <span id="productBrand"></span></p>
+            <p><strong>Kategorie:</strong> <span id="productCategory">Beschreibung hier einfügen</span></p>
+            <p><strong>Beschreibung:</strong> <span id="productDescription">Beschreibung hier einfügen</span></p>
+            <p><strong>Lagerbestand:</strong> <span id="productStock"></span></p>
+
+            <img id="productImage" src="" alt="Produktbild" width="200" height="200">
+        </section>
+
+        <!-- Link zur Suchseite -->
+        <section id="backLink">
+            <a href="index.html" id="backToSearchLink">Zurück zur Suche</a>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2023 Web-Programmierung
+    </footer>
+
+</body>
+</html>
